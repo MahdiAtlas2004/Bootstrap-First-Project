@@ -151,57 +151,78 @@ p {
 
 /* service-box orange */
 .services .service-box.orange {
-    border-bottom: 3px solid #f68c09;
-  }
-  
-  .services .service-box.orange .icon {
-    color: #f68c09;
-    background: #fde3c4;
-  }
-  
-  .services .service-box.orange .read-more {
-    color: #f68c09;
-  }
-  
-  .services .service-box.orange:hover {
-    background: #f68c09;
-    color: #fff;
-  }
+  border-bottom: 3px solid #f68c09;
+}
 
-  /* service-box green */
+.services .service-box.orange .icon {
+  color: #f68c09;
+  background: #fde3c4;
+}
+
+.services .service-box.orange .read-more {
+  color: #f68c09;
+}
+
+.services .service-box.orange:hover {
+  background: #f68c09;
+  color: #fff;
+}
+
+/* service-box green */
 .services .service-box.green {
-    border-bottom: 3px solid #80da4e;
-  }
-  
-  .services .service-box.green .icon {
-    color: #80da4e;
-    background: #cffddf;
-  }
-  
-  .services .service-box.green .read-more {
-    color: #80da4e;
-  }
-  
-  .services .service-box.green:hover {
-    background: #80da4e;
-    color: #fff;
-  }
+  border-bottom: 3px solid #80da4e;
+}
+
+.services .service-box.green .icon {
+  color: #80da4e;
+  background: #cffddf;
+}
+
+.services .service-box.green .read-more {
+  color: #80da4e;
+}
+
+.services .service-box.green:hover {
+  background: #80da4e;
+  color: #fff;
+}
 
 .services .service-box:hover .read-more {
   color: #fff;
 }
 
 .services .service-box:hover .icon {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 /* Pricing */
 .pricing .card {
-    transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .pricing .card:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-  
+/* Contact */
+.contact .info-box {
+  background-color: #fafbff;
+  padding: 30px;
+}
+
+.contact .info-box i {
+  font-size: 38px;
+  line-height: 0;
+  color: #4154f1;
+}
+
+.contact .info-box .cellphone {
+  direction: ltr;
+  text-align: right;
+}
+
+.contact .contact-form {
+  background-color: #fafbff;
+  padding: 30px;
+  height: 100%;
+}
