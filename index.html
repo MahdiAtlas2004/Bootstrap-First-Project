@@ -12,7 +12,7 @@
 
 <body>
     <!-- Header -->
-    <header x-data="{navShow : false}" @scroll.window = "navShow = window.scrollY > 100 ? true : false ">
+    <header x-data="{navShow : false}" @scroll.window="navShow = window.scrollY > 100 ? true : false ">
         <nav class="header navbar navbar-expand-lg navbar-light fixed-top " :class="{'header-scrolled' : navShow}">
             <div class="container">
                 <a class="navbar-brand" href="#">WebProg.io</a>
@@ -41,10 +41,10 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" >درباره ما</a>
+                            <a class="nav-link disabled">درباره ما</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" >تماس ما</a>
+                            <a class="nav-link disabled">تماس ما</a>
                         </li>
                     </ul>
                 </div>
@@ -53,12 +53,45 @@
     </header>
 
     <!-- Intro -->
-    <section class="intro">
+    <section class="intro d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center mt-5 mt-lg-0">
+                <div class="col-lg-6">
+                    <h3 class="fw-bold text-primary text-lg-start text-center">لورم ایپسوم متن ساختگی با تولید سادگی
+                        نامفهوم از صنعت چاپ</h3>
+                    <h5 class="text-muted mt-4">لورم ایپسوم متن ساختگی با تولید سادگی</h5>
+                    <button class="btn btn-lg mt-2 btn-primary hover-grow">لورم ایپسوم</button>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <img src="./images/intro/intro-img.png" alt="image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- About -->
+    <section class="my-5">
+        <div class="container">
+            <div class="row gy-5 gx-0 d-flex align-items-center">
+                <div class="col-lg-6">
+                    <div class="content">
+                        <h3 class="text-primary">لورم ایپسوم متن ساختگی </h3>
+                        <h2 class="fw-bold">لورم نا مفهوم از صنعت ایپسوم متن ساختگی با تولید سادگی</h2>
+                        <p>متن ساختگی متن ساختگی متن ساختگی متن ساختگی متن ساختگی متن ساختگی متن ساختگی متن ساختگی متن
+                            ساختگی متن ساختگی متن ساختگی نا مفهوم از صنعت ایپسوم متن ساختگی با تولید سادگینا مفهوم از
+                            صنعت ایپسوم متن ساختگی با تولید سادگی</p>
+                        <button class="btn btn-lg mt-2 btn-primary hover-grow">لورم ایپسوم</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="./images/about/about.jpg" alt="image" class="img-fluid">
+                </div>
+            </div>
+        </div>
     </section>
 
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    
+
 </body>
 
 </html>
