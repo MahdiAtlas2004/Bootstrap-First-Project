@@ -187,8 +187,6 @@ p {
     color: #fff;
   }
 
-  /* -------- */
-
 .services .service-box:hover .read-more {
   color: #fff;
 }
@@ -197,5 +195,13 @@ p {
     background-color: #fff;
 }
 
+/* Pricing */
+.pricing .card {
+    transition: all 0.3s;
+}
+
+.pricing .card:hover {
+    transform: scale(1.1);
+}
 
   
