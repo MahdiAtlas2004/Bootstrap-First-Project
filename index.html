@@ -7,12 +7,13 @@
     <title>WebProg.io</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="./css/main.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
 </head>
 
 <body>
     <!-- Header -->
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <header x-data="{navShow : false}" @scroll.window = "navShow = window.scrollY > 100 ? true : false ">
+        <nav class="header navbar navbar-expand-lg navbar-light fixed-top " :class="{'header-scrolled' : navShow}">
             <div class="container">
                 <a class="navbar-brand" href="#">WebProg.io</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -24,9 +25,6 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">صفحه اصلی</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -54,9 +52,13 @@
         </nav>
     </header>
 
+    <!-- Intro -->
+    <section class="intro">
 
+    </section>
 
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    
 </body>
 
 </html>
